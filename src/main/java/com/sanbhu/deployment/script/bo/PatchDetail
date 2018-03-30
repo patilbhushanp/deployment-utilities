@@ -1,0 +1,36 @@
+package com.sanbhu.deployment.script.bo;
+
+public class PatchDetail {
+	private boolean isDbScript;
+	private String source;
+	private String destination;
+
+	public boolean isDbScript() {
+		return isDbScript;
+	}
+
+	public void setDbScript(boolean isDbScript) {
+		this.isDbScript = isDbScript;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+	
+	@Override
+	public String toString() {
+		return "isDbScript = " + this.isDbScript() + ", source = " + this.getSource() + ", destination = " + this.getDestination();
+	}
+}
