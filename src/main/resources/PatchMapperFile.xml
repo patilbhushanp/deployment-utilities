@@ -1,0 +1,92 @@
+<PatchMapper>
+	<Module name="workbench">
+		<artifact>
+			<source>Oversight/webui/deployments/workbench.war</source>
+			<destination>jboss/standalone/deployments/workbench.war</destination>
+		</artifact>
+		<artifact>
+			<source>Oversight/webui/deployments/admin.war</source>
+			<destination>jboss/standalone/deployments/admin.war</destination>
+		</artifact>
+		<artifact required="optional">
+			<source>Oversight/lib/workbench.jar</source>
+			<destination>Oversight/lib/workbench.jar</destination>
+		</artifact>
+	</Module>
+	<Module name="workflow">
+		<artifact>
+			<source>Oversight/webui/deployments/workbench.war</source>
+			<destination>jboss/standalone/deployments/workbench.war</destination>
+		</artifact>
+		<artifact>
+			<source>Oversight/webui/deployments/admin.war</source>
+			<destination>jboss/standalone/deployments/admin.war</destination>
+		</artifact>
+	</Module>
+	<Module name="dao">
+		<artifact>
+			<source>Oversight/webui/deployments/workbench.war</source>
+			<destination>jboss/standalone/deployments/workbench.war</destination>
+		</artifact>
+		<artifact>
+			<source>Oversight/webui/deployments/admin.war</source>
+			<destination>jboss/standalone/deployments/admin.war</destination>
+		</artifact>
+		<artifact>
+			<source>Oversight/lib/module-dao.jar</source>
+			<destination>Oversight/lib/module-dao.jar</destination>
+		</artifact>
+	</Module>
+	<Module name="util">
+		<artifact>
+			<source>Oversight/webui/deployments/workbench.war</source>
+			<destination>jboss/standalone/deployments/workbench.war</destination>
+		</artifact>
+		<artifact>
+			<source>Oversight/webui/deployments/admin.war</source>
+			<destination>jboss/standalone/deployments/admin.war</destination>
+		</artifact>
+		<artifact>
+			<source>Oversight/lib/module-util.jar</source>
+			<destination>Oversight/lib/module-util.jar</destination>
+		</artifact>
+		<artifact  required="optional">
+			<source>Oversight/lib/Escalator.jar</source>
+			<destination>Oversight/lib/Escalator.jar</destination>
+		</artifact>
+		<artifact  required="optional">
+			<source>Oversight/lib/Inbox.jar</source>
+			<destination>Oversight/lib/Inbox.jar</destination>
+		</artifact>
+		<artifact  required="optional">
+			<source>Oversight/lib/OversightCoRE.jar</source>
+			<destination>Oversight/lib/OversightCoRE.jar</destination>
+		</artifact>
+		<artifact  required="optional">
+			<source>Oversight/lib/Extractor.jar</source>
+			<destination>Oversight/lib/Extractor.jar</destination>
+		</artifact>
+		<artifact  required="optional">
+			<source>Oversight/lib/Mapper.jar</source>
+			<destination>Oversight/lib/Mapper.jar</destination>
+		</artifact>
+	</Module>
+	<Module name="db">
+		<patch>
+			<script>YYYYY1.SH</script>
+			<script>YYYYY2.SQL</script>
+			<script>YYYYY3.SH</script>
+			<patchXmlFile>pXXXX1.xml</patchXmlFile>
+		</patch>
+		<patch>
+			<script>PPPPP1.SH</script>
+			<script>PPPPP2.SQL</script>
+			<patchXmlFile>pXXXX2.xml</patchXmlFile>
+		</patch>
+		<patch>
+			<script>PPPPP3.SH</script>
+			<script>PPPPP4.SQL</script>
+			<patchXmlFile>pXXXX3.xml</patchXmlFile>
+		</patch>
+	</Module>
+</PatchMapper>
