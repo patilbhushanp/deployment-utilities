@@ -1,74 +1,74 @@
 <PatchMapper>
-	<Module name="workbench">
+	<Module name="my-war-app">
 		<artifact>
-			<source>Oversight/webui/deployments/workbench.war</source>
-			<destination>jboss/standalone/deployments/workbench.war</destination>
+			<source>Sanbhu/webui/deployments/my-war-app.war</source>
+			<destination>jboss/standalone/deployments/my-war-app.war</destination>
 		</artifact>
 		<artifact>
-			<source>Oversight/webui/deployments/admin.war</source>
-			<destination>jboss/standalone/deployments/admin.war</destination>
+			<source>Sanbhu/webui/deployments/my-admin-war.war</source>
+			<destination>jboss/standalone/deployments/my-admin-war.war</destination>
 		</artifact>
 		<artifact required="optional">
-			<source>Oversight/lib/workbench.jar</source>
-			<destination>Oversight/lib/workbench.jar</destination>
+			<source>Sanbhu/lib/my-war-app.jar</source>
+			<destination>Sanbhu/lib/my-war-app.jar</destination>
 		</artifact>
 	</Module>
 	<Module name="workflow">
 		<artifact>
-			<source>Oversight/webui/deployments/workbench.war</source>
-			<destination>jboss/standalone/deployments/workbench.war</destination>
+			<source>Sanbhu/webui/deployments/my-war-app.war</source>
+			<destination>jboss/standalone/deployments/my-war-app.war</destination>
 		</artifact>
 		<artifact>
-			<source>Oversight/webui/deployments/admin.war</source>
-			<destination>jboss/standalone/deployments/admin.war</destination>
+			<source>Sanbhu/webui/deployments/my-admin-war.war</source>
+			<destination>jboss/standalone/deployments/my-admin-war.war</destination>
 		</artifact>
 	</Module>
 	<Module name="dao">
 		<artifact>
-			<source>Oversight/webui/deployments/workbench.war</source>
-			<destination>jboss/standalone/deployments/workbench.war</destination>
+			<source>Sanbhu/webui/deployments/my-war-app.war</source>
+			<destination>jboss/standalone/deployments/my-war-app.war</destination>
 		</artifact>
 		<artifact>
-			<source>Oversight/webui/deployments/admin.war</source>
-			<destination>jboss/standalone/deployments/admin.war</destination>
+			<source>Sanbhu/webui/deployments/my-admin-war.war</source>
+			<destination>jboss/standalone/deployments/my-admin-war.war</destination>
 		</artifact>
 		<artifact>
-			<source>Oversight/lib/module-dao.jar</source>
-			<destination>Oversight/lib/module-dao.jar</destination>
+			<source>Sanbhu/lib/module-dao.jar</source>
+			<destination>Sanbhu/lib/module-dao.jar</destination>
 		</artifact>
 	</Module>
 	<Module name="util">
 		<artifact>
-			<source>Oversight/webui/deployments/workbench.war</source>
-			<destination>jboss/standalone/deployments/workbench.war</destination>
+			<source>Sanbhu/webui/deployments/my-war-app.war</source>
+			<destination>jboss/standalone/deployments/my-war-app.war</destination>
 		</artifact>
 		<artifact>
-			<source>Oversight/webui/deployments/admin.war</source>
-			<destination>jboss/standalone/deployments/admin.war</destination>
+			<source>Sanbhu/webui/deployments/my-admin-war.war</source>
+			<destination>jboss/standalone/deployments/my-admin-war.war</destination>
 		</artifact>
 		<artifact>
-			<source>Oversight/lib/module-util.jar</source>
-			<destination>Oversight/lib/module-util.jar</destination>
+			<source>Sanbhu/lib/module-util.jar</source>
+			<destination>Sanbhu/lib/module-util.jar</destination>
 		</artifact>
 		<artifact  required="optional">
-			<source>Oversight/lib/Escalator.jar</source>
-			<destination>Oversight/lib/Escalator.jar</destination>
+			<source>Sanbhu/lib/Escalator.jar</source>
+			<destination>Sanbhu/lib/Escalator.jar</destination>
 		</artifact>
 		<artifact  required="optional">
-			<source>Oversight/lib/Inbox.jar</source>
-			<destination>Oversight/lib/Inbox.jar</destination>
+			<source>Sanbhu/lib/Inbox.jar</source>
+			<destination>Sanbhu/lib/Inbox.jar</destination>
 		</artifact>
 		<artifact  required="optional">
-			<source>Oversight/lib/OversightCoRE.jar</source>
-			<destination>Oversight/lib/OversightCoRE.jar</destination>
+			<source>Sanbhu/lib/SanbhuCoRE.jar</source>
+			<destination>Sanbhu/lib/SanbhuCoRE.jar</destination>
 		</artifact>
 		<artifact  required="optional">
-			<source>Oversight/lib/Extractor.jar</source>
-			<destination>Oversight/lib/Extractor.jar</destination>
+			<source>Sanbhu/lib/Extractor.jar</source>
+			<destination>Sanbhu/lib/Extractor.jar</destination>
 		</artifact>
 		<artifact  required="optional">
-			<source>Oversight/lib/Mapper.jar</source>
-			<destination>Oversight/lib/Mapper.jar</destination>
+			<source>Sanbhu/lib/Mapper.jar</source>
+			<destination>Sanbhu/lib/Mapper.jar</destination>
 		</artifact>
 	</Module>
 	<Module name="db">
